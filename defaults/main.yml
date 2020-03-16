@@ -1,2 +1,4 @@
 ---
 # defaults file for ansible-aws-sg
+sg_purge_rules: false
+sg_purge_rules_egress: false

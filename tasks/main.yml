@@ -7,7 +7,9 @@
     region: "{{ aws_region }}"
     vpc_id: "{{ vpc_id }}"
     rules: "{{ sg_rules }}"
+    purge_rules: "{{ sg_purge_rules }}"
     rules_egress: "{{ sg_rules_egress }}"
+    purge_rules_egress: "{{ sg_purge_rules_egress }}"
     tags: 
       Name : "{{ sg_name }}"
 
