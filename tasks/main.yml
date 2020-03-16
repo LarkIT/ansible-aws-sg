@@ -1,0 +1,15 @@
+---
+# tasks file for ansible-aws-sg
+- name: Create security group
+  ec2_group:
+    name: "{{ sg_name }}"
+    description: "{{ sg_description }}"
+    region: "{{ aws_region }}"
+    vpc_id: "{{ vpc_id }}"
+    rules: "{{ sg_rules }}"
+    rules_egress: "{{ sg_rules_egress }}"
+    tags: 
+      Name : "{{ sg_name }}"
+
+
+  
